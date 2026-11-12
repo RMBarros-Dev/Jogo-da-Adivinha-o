@@ -1,39 +1,53 @@
-# Jogo da Adivinhação 🎮
+<div align="center">
 
-Este é um projeto desenvolvido em **C#** com o objetivo de praticar lógica de programação e os pilares fundamentais da **Orientação a Objetos (POO)**.
+# Jogo da Adivinhação
 
-O objetivo do jogo é simples: o computador sorteia um número secreto entre 1 e 100, e você deve adivinhá-lo em um número limitado de tentativas.
+**Um jogo de terminal para praticar lógica e orientação a objetos em C#**
 
-## 🚀 Funcionalidades
+[![C#](https://img.shields.io/badge/C%23-.NET%2010-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
+[![Plataforma](https://img.shields.io/badge/plataforma-console-333333)](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o)
 
-- **Geração Aleatória:** O número secreto é gerado automaticamente a cada nova partida.
-- **Feedback Dinâmico:** O sistema informa se o seu palpite é maior ou menor que o número secreto.
-- **Controle de Fluxo:** Validação de entradas para garantir que o usuário digite apenas números.
-- **Rejogabilidade:** Opção de iniciar uma nova partida ao final de cada rodada.
+</div>
 
-## 🛠️ Tecnologias Utilizadas
+## Como funciona
 
-- **Linguagem:** C#
-- **Framework:** .NET
-- **Conceitos Aplicados:**
-  - Encapsulamento de dados
-  - Criação e instanciação de classes (POO)
-  - Estruturas de repetição (`while`) e condições (`if/else`)
-  - Uso de construtores
+A aplicação escolhe um número de 1 a 100. O jogador tenta descobri-lo dentro do limite de tentativas, recebendo uma dica para cada palpite. Ao terminar, é possível iniciar outra partida.
 
-## 💡 O que este projeto me ensinou?
+## Funcionalidades
 
-Este projeto foi fundamental para minha evolução, pois pude colocar em prática:
-1. A **separação de responsabilidades**, dividindo a lógica do jogo (classe `Partida`) da interface de execução (`Program`).
-2. O uso do **Git/GitHub** para controle de versão e backup de código.
-3. A melhoria na legibilidade do código através de nomes de variáveis e métodos claros.
+- Sorteio de um novo número a cada partida
+- Dicas para indicar se o palpite está acima ou abaixo do número sorteado
+- Validação da entrada
+- Opção de jogar novamente
 
-## ⚙️ Como executar
+## Tecnologias e conceitos
 
-1. Clone este repositório para o seu computador.
-2. Abra o arquivo `.sln` no **Visual Studio**.
-3. Pressione `F5` para compilar e rodar o projeto.
-4. Divirta-se tentando adivinhar o número!
+- C# e .NET 10
+- Separação da lógica da partida e do ponto de entrada
+- Condicionais, repetição, classes e encapsulamento
 
----
-*Projeto desenvolvido como parte dos meus estudos de C# e Ciência da Computação.*
+## Executar
+
+Requer o .NET 10 SDK. Clone o projeto e execute a aplicação a partir da pasta do repositório:
+
+```bash
+git clone https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o.git
+cd Jogo-da-Adivinha-o
+dotnet run --project "Jogo da Adivinhação/Jogo da Adivinhação.csproj"
+```
+
+Também é possível abrir `Jogo da Adivinhação.slnx` no Visual Studio e iniciar o projeto.
+
+## Estrutura
+
+```text
+Jogo-da-Adivinha-o/
+├── Jogo da Adivinhação/
+│   └── Jogo da Adivinhação.csproj
+├── partida.cs
+└── Jogo da Adivinhação.slnx
+```
+
+## Licença
+
+Consulte [LICENSE.txt](LICENSE.txt).
