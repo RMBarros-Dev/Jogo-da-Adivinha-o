@@ -16,6 +16,17 @@
 
 ---
 
+## Índice
+
+- [Como funciona](#como-funciona)
+- [Área de aplicação e funcionalidades](#funcionalidades)
+- [Conceitos e técnicas](#conceitos-praticados)
+- [Metodologia](#metodologia-de-desenvolvimento)
+- [Requisitos e execução](#requisitos)
+- [Estrutura de arquivos](#estrutura-do-repositório)
+- [Documentação e princípios](#documentação-e-princípios-de-engenharia)
+- [Licença](#licença)
+
 ## Como funciona
 
 A aplicação sorteia um número inteiro entre 1 e 100. A pessoa jogadora tenta descobrir o valor dentro de cinco tentativas válidas, recebendo indicações para orientar os palpites. Ao final, pode iniciar uma nova partida.
@@ -37,6 +48,10 @@ Entradas que não podem ser interpretadas como números inteiros são rejeitadas
 - Métodos e separação da lógica de partida.
 - Condicionais e estruturas de repetição.
 - Leitura e validação de entradas no terminal.
+
+## Metodologia de desenvolvimento
+
+O exercício organiza o fluxo de uma partida em uma classe própria, mantendo o ponto de entrada separado. A evolução recomendada é incremental: preservar o comportamento esperado, validar entradas inválidas e acrescentar testes quando a lógica for ampliada.
 
 ## Requisitos
 
@@ -73,6 +88,14 @@ Jogo-da-Adivinha-o/
 ## Identidade visual
 
 Os ativos da marca e suas regras estão documentados em [assets/brand](assets/brand/) e [docs/brand/README.md](docs/brand/README.md).
+
+## Documentação e princípios de engenharia
+
+- [Identidade visual](docs/brand/README.md).
+- [Banner SVG](assets/brand/banner.svg) e [logotipo SVG](assets/brand/logo.svg).
+- [Projeto .NET](Jogo%20da%20Adivinha%C3%A7%C3%A3o/Jogo%20da%20Adivinha%C3%A7%C3%A3o.csproj).
+
+O projeto prioriza simplicidade, legibilidade, validação das entradas e separação da lógica de jogo. Trata-se de um exercício de aprendizagem, não de um produto de entretenimento com infraestrutura ou serviços online.
 
 ## Licença
 
