@@ -1,39 +1,49 @@
-<div align="center">
-
-<p align="center">
-  <img src="assets/brand/project-mark.svg" alt="GUESS — identidade visual do projeto" width="100%" />
-</p>
-
-
 # Jogo da Adivinhação
 
-**Um jogo de terminal para praticar lógica e orientação a objetos em C#**
+<p align="center">
+  <img src="assets/brand/banner.svg" alt="Jogo da Adivinhação — Guess Number Game" width="100%" />
+</p>
+<p align="center"><img src="assets/brand/logo.svg" alt="Jogo da Adivinhação logo" width="76"/></p>
 
-[![C#](https://img.shields.io/badge/C%23-.NET%2010-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
-[![Plataforma](https://img.shields.io/badge/plataforma-console-333333)](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o)
+<p align="center">
+  <strong>Jogo de terminal para praticar fundamentos de programação e orientação a objetos em C#.</strong>
+</p>
 
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/C%23-.NET%2010-512BD4?logo=dotnet&logoColor=white" alt="C# .NET 10"/>
+  <img src="https://img.shields.io/badge/Platform-Console-334155" alt="Console"/>
+</p>
+
+---
 
 ## Como funciona
 
-A aplicação escolhe um número de 1 a 100. O jogador tenta descobri-lo dentro do limite de tentativas, recebendo uma dica para cada palpite. Ao terminar, é possível iniciar outra partida.
+A aplicação sorteia um número inteiro entre 1 e 100. A pessoa jogadora tenta descobrir o valor dentro de cinco tentativas válidas, recebendo indicações para orientar os palpites. Ao final, pode iniciar uma nova partida.
+
+Entradas que não podem ser interpretadas como números inteiros são rejeitadas sem consumir uma tentativa.
 
 ## Funcionalidades
 
-- Sorteio de um novo número a cada partida
-- Dicas para indicar se o palpite está acima ou abaixo do número sorteado
-- Validação da entrada
-- Opção de jogar novamente
+- Sorteio de um novo número a cada partida.
+- Limite de cinco tentativas válidas.
+- Dicas para indicar se o palpite está acima ou abaixo do número secreto.
+- Validação de entradas.
+- Opção de jogar novamente.
 
-## Tecnologias e conceitos
+## Conceitos praticados
 
-- C# e .NET 10
-- Separação da lógica da partida e do ponto de entrada
-- Condicionais, repetição, classes e encapsulamento
+- C# e .NET 10.
+- Classes e encapsulamento.
+- Métodos e separação da lógica de partida.
+- Condicionais e estruturas de repetição.
+- Leitura e validação de entradas no terminal.
+
+## Requisitos
+
+- .NET 10 SDK.
+- Terminal ou IDE compatível com projetos .NET.
 
 ## Executar
-
-Requer o .NET 10 SDK. Clone o projeto e execute a aplicação a partir da pasta do repositório:
 
 ```bash
 git clone https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o.git
@@ -41,17 +51,28 @@ cd Jogo-da-Adivinha-o
 dotnet run --project "Jogo da Adivinhação/Jogo da Adivinhação.csproj"
 ```
 
-Também é possível abrir `Jogo da Adivinhação.slnx` no Visual Studio e iniciar o projeto.
+Também é possível abrir `Jogo da Adivinhação.slnx` em uma IDE compatível com .NET.
 
-## Estrutura
+## Estrutura do repositório
 
 ```text
 Jogo-da-Adivinha-o/
 ├── Jogo da Adivinhação/
-│   └── Jogo da Adivinhação.csproj
-├── partida.cs
-└── Jogo da Adivinhação.slnx
+│   ├── Jogo da Adivinhação.csproj
+│   ├── Partida.cs
+│   └── Program.cs
+├── assets/
+│   └── brand/
+│       ├── banner.svg
+│       ├── logo.svg
+│       └── project-mark.svg
+├── Jogo da Adivinhação.slnx
+└── LICENSE.txt
 ```
+
+## Identidade visual
+
+Os ativos da marca e suas regras estão documentados em [assets/brand](assets/brand/) e [docs/brand/README.md](docs/brand/README.md).
 
 ## Licença
 
