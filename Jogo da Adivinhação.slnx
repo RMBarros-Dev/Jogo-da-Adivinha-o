@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="Jogo da Adivinhação/Jogo da Adivinhação.csproj" />
+  <Project Path="Jogo da Adivinhação.Tests/Jogo da Adivinhação.Tests.csproj" />
 </Solution>
