@@ -1,30 +1,25 @@
-# Diretrizes de identidade visual — Jogo-da-Adivinha-o
+# Diretrizes de identidade visual — Jogo da Adivinhação
 
 ## Conceito
 
-Jogo de terminal para exercitar lógica e fundamentos de C#.
+Identidade playful minimal, com linguagem geométrica, acessível e energética. O símbolo combina balão de diálogo e interrogação para comunicar descoberta, raciocínio e desafio.
 
-## Paleta
+## Paleta aplicada
 
-| Token | Hex | Aplicação |
+| Token | HEX | Aplicação |
 | --- | --- | --- |
-| Base | `#2A1016` | Fundos e superfícies |
-| Primária | `#BE123C` | Marca e elementos estruturais |
-| Destaque | `#FB923C` | Ênfase e detalhes |
+| Azul-escuro | `#0C1B36` | Fundo principal |
+| Azul profundo | `#142C4C` | Superfícies e profundidade |
+| Coral | `#FF786E` | Contornos e acentos |
+| Amarelo | `#FFC629` | Símbolo e destaques |
+| Marfim | `#FFF7E8` | Texto e contraste |
 
 ## Ativos oficiais
 
-- `assets/brand/logo.svg`: símbolo vetorial do projeto.
-- `assets/brand/banner.svg`: banner horizontal para README e apresentações.
-- `assets/brand/project-mark.svg`: marca compacta legada, mantida por compatibilidade.
+- `assets/brand/logo.svg`: emblema vetorial com balão e interrogação.
+- `assets/brand/banner.svg`: banner horizontal editorial para README e apresentações.
+- `assets/brand/project-mark.svg`: marca anterior preservada para compatibilidade.
 
-## Regras de aplicação
+## Aplicação
 
-1. Não distorcer, inclinar ou alterar a proporção dos ativos.
-2. Preservar as cores e o contraste previstos na paleta.
-3. Usar o banner em sua proporção original, sem recortes que removam nome ou símbolo.
-4. Preferir os ativos locais do repositório em vez de imagens hospedadas em serviços externos.
-
-## Estrutura relacionada
-
-`assets/brand/` concentra os elementos da identidade visual. A documentação técnica e de arquitetura permanece em seus diretórios próprios.
+Preservar proporções, contraste e área de respiro. Utilizar os SVGs locais do repositório e não alterar individualmente as cores dos ativos.
