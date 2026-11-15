@@ -1,0 +1,34 @@
+name: Jogo da Adivinhacao CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: jogo-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Restore and build .NET application
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Restore solution
+        run: dotnet restore "Jogo da Adivinhação.slnx"
+
+      - name: Build application
+        run: dotnet build "Jogo da Adivinhação.slnx" --configuration Release --no-restore
