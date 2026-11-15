@@ -1,5 +1,10 @@
 <div align="center">
 
+<p align="center">
+  <img src="assets/brand/project-mark.svg" alt="GUESS — identidade visual do projeto" width="100%" />
+</p>
+
+
 # Jogo da Adivinhação
 
 **Um jogo de terminal para praticar lógica e orientação a objetos em C#**
