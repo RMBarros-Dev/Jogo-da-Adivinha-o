@@ -85,12 +85,9 @@ Jogo-da-Adivinha-o/
 └── LICENSE.txt
 ```
 
-## Identidade visual
-
-Os ativos da marca e suas regras estão documentados em [assets/brand](assets/brand/) e [docs/brand/README.md](docs/brand/README.md).
-
 ## Documentação e princípios de engenharia
 
+- [Organização de arquivos](docs/project-structure.md).
 - [Identidade visual](docs/brand/README.md).
 - [Banner SVG](assets/brand/banner.svg) e [logotipo SVG](assets/brand/logo.svg).
 - [Projeto .NET](Jogo%20da%20Adivinha%C3%A7%C3%A3o/Jogo%20da%20Adivinha%C3%A7%C3%A3o.csproj).
