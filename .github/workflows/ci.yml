@@ -30,5 +30,8 @@ jobs:
       - name: Restore solution
         run: dotnet restore "Jogo da Adivinhação.slnx"
 
-      - name: Build application
+      - name: Build application and test project
         run: dotnet build "Jogo da Adivinhação.slnx" --configuration Release --no-restore
+
+      - name: Run unit tests
+        run: dotnet test "Jogo da Adivinhação.Tests/Jogo da Adivinhação.Tests.csproj" --configuration Release --no-build
