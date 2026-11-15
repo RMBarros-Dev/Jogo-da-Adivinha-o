@@ -33,6 +33,10 @@ A aplicação sorteia um número inteiro entre 1 e 100. A pessoa jogadora tenta 
 
 Entradas que não podem ser interpretadas como números inteiros são rejeitadas sem consumir uma tentativa.
 
+## Área de aplicação
+
+Exercício de programação para terminal, destinado à prática de lógica, controle de fluxo, leitura de entradas e organização básica de classes em C#.
+
 ## Funcionalidades
 
 - Sorteio de um novo número a cada partida.
