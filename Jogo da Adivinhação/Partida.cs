@@ -43,23 +43,23 @@ namespace JogoAdivinhacao
                 Console.WriteLine($"Game Over! O número era {_numeroSecreto}.");
         }
 
-        // Método de apoio (privado) para verificar o palpite
+        // Mantém a interação no console e delega a regra pura para permitir testes determinísticos.
         private bool Verificar(int palpite)
         {
-            if (palpite < _numeroSecreto)
+            var resultado = RegrasDaPartida.AvaliarPalpite(_numeroSecreto, palpite);
+
+            switch (resultado)
             {
-                Console.WriteLine("Dica: O número é MAIOR.");
+                case ResultadoPalpite.Menor:
+                    Console.WriteLine("Dica: O número é MAIOR.");
+                    return false;
+                case ResultadoPalpite.Maior:
+                    Console.WriteLine("Dica: O número é MENOR.");
+                    return false;
+                default:
+                    Console.WriteLine("Parabéns! Você acertou!");
+                    return true;
             }
-            else if (palpite > _numeroSecreto)
-            {
-                Console.WriteLine("Dica: O número é MENOR.");
-            }
-            else
-            {
-                Console.WriteLine("Parabéns! Você acertou!");
-                return true;
-            }
-            return false;
         }
     }
 }
