@@ -11,6 +11,27 @@
   <a href="https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/codeql.yml"><img src="https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/codeql.yml/badge.svg?branch=master" alt="CodeQL status" /></a>
 </p>
 
+## Contents
+
+- [01 · Overview](#01--overview)
+- [02 · Gameplay](#02--gameplay)
+- [03 · Rules](#03--rles)
+- [04 · Input Validation](#04--inptvalidation)
+- [05 · Game Logic Architecture](#05--gamelogicarchitectre)
+- [06 · Programming Concepts](#06--programmingconcepts)
+- [07 · Technology Stack](#07--technologystack)
+- [08 · Requirements](#08--reqirements)
+- [09 · Clone and Run](#09--cloneandrn)
+- [10 · Automated Tests](#10--atomatedtests)
+- [11 · Deterministic Randomness](#11--deterministicrandomness)
+- [12 · Error Handling and Game Flow](#12--errorhandlingandgamelow)
+- [13 · Repository Structure](#13--repositorystrctre)
+- [14 · Quality and Maintainability](#14--qalityandmaintainability)
+- [15 · Development Methodology](#15--developmentmethodology)
+- [16 · Known Limitations](#16--knownlimitations)
+- [17 · Documentation and Engineering Principles](#17--docmentationandengineeringprinciples)
+- [18 · License and Attribution](#18--licenseandattribtion)
+
 ## 01 · Overview
 
 A small .NET console game in which the player tries to discover a randomly selected integer. The project is an educational exercise focused on logic, input handling and class organization.
