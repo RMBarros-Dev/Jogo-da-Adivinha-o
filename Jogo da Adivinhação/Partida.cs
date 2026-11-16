@@ -9,10 +9,9 @@ namespace JogoAdivinhacao
         private int _maxTentativas = 5;
 
         // Construtor: inicializa a partida assim que você cria o objeto
-        public Partida()
+        public Partida(Random? random = null)
         {
-            Random random = new Random();
-            _numeroSecreto = random.Next(1, 101);
+            _numeroSecreto = (random ?? Random.Shared).Next(1, 101);
         }
 
         // Método principal que controla o fluxo da partida
@@ -30,6 +29,12 @@ namespace JogoAdivinhacao
 
                 if (int.TryParse(input, out int palpite))
                 {
+                    if (palpite is < 1 or > 100)
+                    {
+                        Console.WriteLine("Digite um número entre 1 e 100. Esta entrada não consome uma tentativa.");
+                        continue;
+                    }
+
                     contador++;
                     acertou = Verificar(palpite);
                 }
