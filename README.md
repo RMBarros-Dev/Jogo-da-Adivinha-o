@@ -16,7 +16,8 @@
 
 
 <p align="center">
-  [![CI](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/ci.yml) [![CodeQL](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/codeql.yml)
+  <a href="https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/ci.yml"><img src="https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/ci.yml/badge.svg?branch=master" alt="CI status" /></a>
+  <a href="https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/codeql.yml"><img src="https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/codeql.yml/badge.svg?branch=master" alt="CodeQL status" /></a>
 </p>
 
 ---
@@ -36,7 +37,7 @@
 
 A aplicação sorteia um número inteiro entre 1 e 100. A pessoa jogadora tenta descobrir o valor dentro de cinco tentativas válidas, recebendo indicações para orientar os palpites. Ao final, pode iniciar uma nova partida.
 
-Entradas que não podem ser interpretadas como números inteiros são rejeitadas sem consumir uma tentativa.
+Entradas que não podem ser interpretadas como números inteiros ou que estejam fora do intervalo de 1 a 100 são rejeitadas sem consumir uma tentativa. A geração do número pode receber uma instância de `Random`, permitindo cenários determinísticos em testes.
 
 ## Área de aplicação
 
@@ -85,6 +86,9 @@ Jogo-da-Adivinha-o/
 │   ├── Jogo da Adivinhação.csproj
 │   ├── Partida.cs
 │   └── Program.cs
+├── Jogo da Adivinhação.Tests/
+│   ├── Jogo da Adivinhação.Tests.csproj
+│   └── RegrasDaPartidaTests.cs
 ├── assets/
 │   └── brand/
 │       ├── banner.svg
