@@ -14,6 +14,11 @@
   <img src="https://img.shields.io/badge/Platform-Console-334155" alt="Console"/>
 </p>
 
+
+<p align="center">
+  [![CI](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/ci.yml) [![CodeQL](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/codeql.yml/badge.svg?branch=master)](https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o/actions/workflows/codeql.yml)
+</p>
+
 ---
 
 ## Índice
