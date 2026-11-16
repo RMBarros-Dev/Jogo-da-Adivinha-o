@@ -14,6 +14,9 @@ public static class RegrasDaPartida
         if (numeroSecreto is < 1 or > 100)
             throw new ArgumentOutOfRangeException(nameof(numeroSecreto), "O número secreto deve estar entre 1 e 100.");
 
+        if (palpite is < 1 or > 100)
+            throw new ArgumentOutOfRangeException(nameof(palpite), "O palpite deve estar entre 1 e 100.");
+
         if (palpite < numeroSecreto)
             return ResultadoPalpite.Menor;
 

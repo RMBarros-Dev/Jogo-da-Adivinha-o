@@ -34,4 +34,13 @@ public class RegrasDaPartidaTests
         Assert.Throws<ArgumentOutOfRangeException>(
             () => RegrasDaPartida.AvaliarPalpite(numeroSecreto, 50));
     }
+
+    [Theory]
+    [InlineData(0)]
+    [InlineData(101)]
+    public void AvaliarPalpite_RejeitaPalpiteForaDoIntervalo(int palpite)
+    {
+        Assert.Throws<ArgumentOutOfRangeException>(
+            () => RegrasDaPartida.AvaliarPalpite(50, palpite));
+    }
 }
