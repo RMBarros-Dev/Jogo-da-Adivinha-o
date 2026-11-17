@@ -3,7 +3,7 @@
 <p align="center"><img src="assets/brand/banner.svg" alt="Guessing Game banner" width="100%" /></p>
 <p align="center"><img src="assets/brand/logo.svg" alt="Guessing Game logo" width="76" /></p>
 <h1 align="center">Guessing Game</h1>
-<p align="center"><strong>Console game for practicing programming fundamentals and object-oriented C#.</strong></p>
+<p align="center"><strong>Think. Compare. Discover.</strong><br/>A console game for practicing logic, input validation and object-oriented C#.</p>
 <p align="center">
   <img src="https://img.shields.io/badge/C%23-.NET%2010-512BD4?logo=dotnet&logoColor=white" alt="C sharp .NET 10" />
   <img src="https://img.shields.io/badge/Platform-Console-334155" alt="Console" />
