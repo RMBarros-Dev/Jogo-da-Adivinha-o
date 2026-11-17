@@ -3,7 +3,7 @@
 <p align="center"><img src="assets/brand/banner.svg" alt="Jogo da Adivinhação — identidade visual" width="100%" /></p>
 <p align="center"><img src="assets/brand/logo.svg" alt="Logotipo do Jogo da Adivinhação" width="76" /></p>
 <h1 align="center">Jogo da Adivinhação</h1>
-<p align="center"><strong>Jogo de terminal para praticar fundamentos de programação e orientação a objetos em C#.</strong></p>
+<p align="center"><strong>Pense. Compare. Descubra.</strong><br/>Jogo de terminal para praticar lógica, validação de entradas e orientação a objetos em C#.</p>
 <p align="center">
   <img src="https://img.shields.io/badge/C%23-.NET%2010-512BD4?logo=dotnet&logoColor=white" alt="C# .NET 10" />
   <img src="https://img.shields.io/badge/Platform-Console-334155" alt="Console" />
