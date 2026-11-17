@@ -43,4 +43,52 @@ public class RegrasDaPartidaTests
         Assert.Throws<ArgumentOutOfRangeException>(
             () => RegrasDaPartida.AvaliarPalpite(50, palpite));
     }
+
+    [Theory]
+    [InlineData("S", true)]
+    [InlineData("s", true)]
+    [InlineData(" S ", true)]
+    [InlineData("N", false)]
+    [InlineData("n", false)]
+    [InlineData(" N ", false)]
+    public void TryInterpretarRespostaJogarNovamente_AceitaRespostasValidas(
+        string resposta,
+        bool esperado)
+    {
+        var valido = RegrasDaPartida.TryInterpretarRespostaJogarNovamente(
+            resposta,
+            out var jogarNovamente);
+
+        Assert.True(valido);
+        Assert.Equal(esperado, jogarNovamente);
+    }
+
+    [Theory]
+    [InlineData("")]
+    [InlineData(" ")]
+    [InlineData("talvez")]
+    [InlineData("sim")]
+    [InlineData("não")]
+    [InlineData("X")]
+    public void TryInterpretarRespostaJogarNovamente_RejeitaRespostasInvalidas(
+        string resposta)
+    {
+        var valido = RegrasDaPartida.TryInterpretarRespostaJogarNovamente(
+            resposta,
+            out var jogarNovamente);
+
+        Assert.False(valido);
+        Assert.False(jogarNovamente);
+    }
+
+    [Fact]
+    public void TryInterpretarRespostaJogarNovamente_RejeitaValorNulo()
+    {
+        var valido = RegrasDaPartida.TryInterpretarRespostaJogarNovamente(
+            null,
+            out var jogarNovamente);
+
+        Assert.False(valido);
+        Assert.False(jogarNovamente);
+    }
 }
