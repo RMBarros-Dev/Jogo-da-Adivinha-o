@@ -25,7 +25,6 @@ public static class RegrasDaPartida
 
         return ResultadoPalpite.Correto;
     }
-}
 
     public static bool TryInterpretarRespostaJogarNovamente(
         string? resposta,
