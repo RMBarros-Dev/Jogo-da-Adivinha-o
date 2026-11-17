@@ -42,7 +42,7 @@ O objetivo é praticar fundamentos de programação e orientação a objetos em 
 
 ## 03 · Como funciona
 
-A aplicação sorteia um número inteiro entre 1 e 100. A pessoa jogadora tem até cinco tentativas válidas e recebe dicas que indicam se o palpite está acima ou abaixo do número secreto. Ao terminar, pode iniciar uma nova partida.
+A aplicação sorteia um número inteiro entre 1 e 100. A pessoa jogadora tem até cinco tentativas válidas e recebe dicas que indicam se o palpite está acima ou abaixo do número secreto. Ao terminar, pode iniciar uma nova partida. A confirmação para jogar novamente aceita apenas `S` ou `N`, sem diferenciar maiúsculas de minúsculas; entradas inválidas solicitam uma nova resposta.
 
 ## 04 · Regras da partida
 
