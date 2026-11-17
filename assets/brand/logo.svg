@@ -1,8 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
-<title id="title">Jogo da Adivinhação — símbolo</title><desc id="desc">Símbolo vetorial de identidade visual do projeto Jogo da Adivinhação.</desc>
-<defs><linearGradient id="ring" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#28C5FF"/><stop offset="1" stop-color="#F7C948"/></linearGradient><radialGradient id="surface"><stop stop-color="#071A3D"/><stop offset="1" stop-color="#020817"/></radialGradient></defs>
-<circle cx="128" cy="128" r="122" fill="url(#ring)"/><circle cx="128" cy="128" r="113" fill="url(#surface)" stroke="#1E3A5F" stroke-width="2"/>
-<g transform="translate(0 0)"><circle cx="128" cy="104" r="58" fill="#28C5FF" opacity=".18"/><path d="M72 95a56 56 0 0 1 112 0c0 28-20 39-39 53-10 8-15 16-15 29" fill="none" stroke="#28C5FF" stroke-width="13" stroke-linecap="round"/><circle cx="130" cy="202" r="8" fill="#F7C948"/><path d="M52 52l18 18m116-18-18 18" stroke="#F7C948" stroke-width="7" stroke-linecap="round"/></g>
-<path d="M50 218Q128 239 206 218" fill="none" stroke="#28C5FF" stroke-width="4" stroke-linecap="round"/>
-<text x="128" y="238" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#F8FAFC" letter-spacing="1">JOGO DA ADIVINHAÇÃO</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title id="title">Jogo da Adivinhação</title><desc id="desc">Alvo geométrico com ponto de interrogação, representando tentativa, raciocínio e descoberta.</desc>
+<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#39C6D6"/><stop offset="1" stop-color="#F2B65D"/></linearGradient></defs>
+<rect x="8" y="8" width="240" height="240" rx="56" fill="#101B2B"/>
+<circle cx="128" cy="128" r="82" fill="none" stroke="#29445A" stroke-width="3"/>
+<circle cx="128" cy="128" r="61" fill="none" stroke="#39C6D6" stroke-width="8" stroke-dasharray="250 134" transform="rotate(-42 128 128)" stroke-linecap="round"/>
+<circle cx="128" cy="128" r="39" fill="#1B3042" stroke="#F2B65D" stroke-width="4"/>
+<path d="M111 111c2-13 12-20 25-20 15 0 25 9 25 22 0 12-8 18-17 25-8 6-12 12-12 22" fill="none" stroke="#F5F1E8" stroke-width="11" stroke-linecap="round"/>
+<circle cx="132" cy="178" r="6" fill="#39C6D6"/>
+<path d="M128 29v20M227 128h-20M29 128h20M128 227v-20" stroke="url(#a)" stroke-width="5" stroke-linecap="round"/>
 </svg>
