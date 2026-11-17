@@ -13,34 +13,43 @@
 
 ## Contents
 
-- [01 · Overview](#01--overview)
-- [02 · Gameplay](#02--gameplay)
-- [03 · Rules](#03--rules)
-- [04 · Input Validation](#04--input-validation)
-- [05 · Game Logic Architecture](#05--game-logic-architecture)
-- [06 · Programming Concepts](#06--programming-concepts)
-- [07 · Technology Stack](#07--technology-stack)
-- [08 · Requirements](#08--requirements)
-- [09 · Clone and Run](#09--clone-and-run)
-- [10 · Automated Tests](#10--automated-tests)
-- [11 · Deterministic Randomness](#11--deterministic-randomness)
-- [12 · Error Handling and Game Flow](#12--error-handling-and-game-flow)
-- [13 · Repository Structure](#13--repository-structure)
-- [14 · Quality and Maintainability](#14--quality-and-maintainability)
-- [15 · Development Methodology](#15--development-methodology)
-- [16 · Known Limitations](#16--known-limitations)
-- [17 · Documentation and Engineering Principles](#17--documentation-and-engineering-principles)
-- [18 · License and Attribution](#18--license-and-attribution)
+- [01 · Context and project positioning](#01--context-and-project-positioning)
+- [02 · Live demonstration and visual references](#02--live-demonstration-and-visual-references)
+- [03 · Features and implementation status](#03--features-and-implementation-status)
+- [04 · System architecture](#04--system-architecture)
+- [05 · Technology stack](#05--technology-stack)
+- [06 · Directory structure](#06--directory-structure)
+- [07 · Prerequisites and installation](#07--prerequisites-and-installation)
+- [08 · Environment and data configuration](#08--environment-and-data-configuration)
+- [09 · User guide](#09--user-guide)
+- [10 · Testing and quality](#10--testing-and-quality)
+- [11 · Internationalization and localization](#11--internationalization-and-localization)
+- [12 · Deployment and infrastructure](#12--deployment-and-infrastructure)
+- [13 · Security and limitations](#13--security-and-limitations)
+- [14 · Additional documentation](#14--additional-documentation)
+- [15 · Contribution, license and credits](#15--contribution-license-and-credits)
 
-## 01 · Overview
+## 01 · Context and project positioning
+
+
+
+### Overview
 
 A small .NET console game in which the player tries to discover a randomly selected integer. The project is an educational exercise focused on logic, input handling and class organization.
 
-## 02 · Gameplay
+## 02 · Live demonstration and visual references
+
+The current README does not identify a public demo URL or runtime screenshot. Use the local demonstration or the visual references identified in this section.
+
+## 03 · Features and implementation status
+
+The status presented here reflects the scope described in the README and the material referenced by the repository. It is not, by itself, operational sign-off or independent validation.
+
+### Gameplay
 
 The application selects an integer between 1 and 100. The player has up to five valid attempts and receives hints indicating whether a guess is higher or lower than the secret number. A new round can be started after the game ends.
 
-## 03 · Rules
+### Rules
 
 - The secret number is within the inclusive range 1–100.
 - The player has five valid attempts.
@@ -48,15 +57,23 @@ The application selects an integer between 1 and 100. The player has up to five 
 - Hints guide the next guess.
 - A new round can be started.
 
-## 04 · Input Validation
+### Input Validation
 
 Values that cannot be parsed as integers or fall outside the 1–100 range are rejected without consuming an attempt. This keeps invalid input separate from a valid game guess.
 
-## 05 · Game Logic Architecture
+## 04 · System architecture
+
+
+
+### Game Logic Architecture
 
 The round logic is organized in a dedicated `Partida` class, while the application entry point remains separate. This separation keeps game rules distinct from terminal interaction.
 
-## 06 · Programming Concepts
+## 05 · Technology stack
+
+
+
+### Programming Concepts
 
 - C# and .NET 10.
 - Classes and encapsulation.
@@ -65,7 +82,7 @@ The round logic is organized in a dedicated `Partida` class, while the applicati
 - Terminal input and validation.
 - Dependency injection of a random-number generator for deterministic tests.
 
-## 07 · Technology Stack
+### Technology Stack
 
 | Layer | Technology |
 |---|---|
@@ -75,39 +92,11 @@ The round logic is organized in a dedicated `Partida` class, while the applicati
 | Automated tests | Separate .NET test project |
 | Testability | Injectable `Random` instance |
 
-## 08 · Requirements
+## 06 · Directory structure
 
-- .NET 10 SDK.
-- Terminal or IDE compatible with .NET projects.
-- Git for cloning the repository.
 
-## 09 · Clone and Run
 
-```bash
-git clone https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o.git
-cd Jogo-da-Adivinha-o
-dotnet run --project "Jogo da Adivinhação/Jogo da Adivinhação.csproj"
-```
-
-You can also open `Jogo da Adivinhação.slnx` in a compatible .NET IDE.
-
-## 10 · Automated Tests
-
-The repository contains a separate test project under `Jogo da Adivinhação.Tests/`. Run the solution's tests with:
-
-```bash
-dotnet test
-```
-
-## 11 · Deterministic Randomness
-
-The game logic can receive a `Random` instance. Tests can supply a predictable generator to validate win, loss and hint scenarios without depending on unpredictable random values.
-
-## 12 · Error Handling and Game Flow
-
-Invalid values are rejected before attempt accounting. Valid guesses update the round state and produce the appropriate hint or terminal result. Changes to these rules should be accompanied by tests.
-
-## 13 · Repository Structure
+### Repository Structure
 
 ```text
 Jogo-da-Adivinha-o/
@@ -123,19 +112,79 @@ Jogo-da-Adivinha-o/
 └── LICENSE.txt
 ```
 
-## 14 · Quality and Maintainability
+## 07 · Prerequisites and installation
+
+
+
+### Requirements
+
+- .NET 10 SDK.
+- Terminal or IDE compatible with .NET projects.
+- Git for cloning the repository.
+
+### Clone and Run
+
+```bash
+git clone https://github.com/RMBarros-Dev/Jogo-da-Adivinha-o.git
+cd Jogo-da-Adivinha-o
+dotnet run --project "Jogo da Adivinhação/Jogo da Adivinhação.csproj"
+```
+
+You can also open `Jogo da Adivinhação.slnx` in a compatible .NET IDE.
+
+## 08 · Environment and data configuration
+
+The current README does not describe an `.env` file or application-specific environment variables. Do not store secrets in version control.
+
+## 09 · User guide
+
+
+
+### Error Handling and Game Flow
+
+Invalid values are rejected before attempt accounting. Valid guesses update the round state and produce the appropriate hint or terminal result. Changes to these rules should be accompanied by tests.
+
+## 10 · Testing and quality
+
+
+
+### Automated Tests
+
+The repository contains a separate test project under `Jogo da Adivinhação.Tests/`. Run the solution's tests with:
+
+```bash
+dotnet test
+```
+
+### Deterministic Randomness
+
+The game logic can receive a `Random` instance. Tests can supply a predictable generator to validate win, loss and hint scenarios without depending on unpredictable random values.
+
+### Quality and Maintainability
 
 Keep the rules testable and the terminal interaction separate from game state. Validate the range boundary cases, invalid input and repeat-game behavior when changing the implementation.
 
-## 15 · Development Methodology
+## 11 · Internationalization and localization
 
-The exercise favors small incremental changes: preserve expected behavior, reject invalid input, isolate the game rules and add tests as the logic grows.
+No internationalization/localization pipeline is documented in this repository. Support for languages or regional variants must not be inferred.
 
-## 16 · Known Limitations
+## 12 · Deployment and infrastructure
+
+Web-service deployment does not apply to the console application described here. No hosted environment or publishing process is documented.
+
+## 13 · Security and limitations
+
+
+
+### Known Limitations
 
 This is a small learning exercise. It is not an online game and does not include accounts, networking, persistence, multiplayer or production infrastructure.
 
-## 17 · Documentation and Engineering Principles
+## 14 · Additional documentation
+
+
+
+### Documentation and Engineering Principles
 
 - [Project structure](docs/project-structure.md).
 - [Brand guide](docs/brand/README.md).
@@ -144,6 +193,14 @@ This is a small learning exercise. It is not an online game and does not include
 
 The project prioritizes simplicity, readability, input validation and separation of game logic.
 
-## 18 · License and Attribution
+## 15 · Contribution, license and credits
+
+When proposing changes, describe the goal, affected files and validation performed. Prefer small, reviewable changes; include tests when behavior changes and never submit credentials, tokens or personal data.
+
+### Development Methodology
+
+The exercise favors small incremental changes: preserve expected behavior, reject invalid input, isolate the game rules and add tests as the logic grows.
+
+### License and Attribution
 
 See [LICENSE.txt](LICENSE.txt) for the repository license and applicable terms.
