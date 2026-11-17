@@ -26,3 +26,25 @@ public static class RegrasDaPartida
         return ResultadoPalpite.Correto;
     }
 }
+
+    public static bool TryInterpretarRespostaJogarNovamente(
+        string? resposta,
+        out bool jogarNovamente)
+    {
+        jogarNovamente = false;
+
+        if (string.IsNullOrWhiteSpace(resposta))
+            return false;
+
+        switch (resposta.Trim().ToUpperInvariant())
+        {
+            case "S":
+                jogarNovamente = true;
+                return true;
+            case "N":
+                return true;
+            default:
+                return false;
+        }
+    }
+}
