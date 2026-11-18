@@ -153,3 +153,28 @@ Este é um exercício de aprendizagem. Não inclui contas, rede, persistência, 
 - [Projeto .NET](Jogo%20da%20Adivinha%C3%A7%C3%A3o/Jogo%20da%20Adivinha%C3%A7%C3%A3o.csproj).
 
 Consulte [LICENSE.txt](LICENSE.txt) para os termos da licença.
+
+
+## Métricas de Engenharia
+
+<div align="center">
+  <img src="https://img.shields.io/github/stars/RMBarros-Dev/Jogo-da-Adivinha-o?style=flat-square&label=stars" alt="Estrelas no GitHub" />
+  <img src="https://img.shields.io/github/forks/RMBarros-Dev/Jogo-da-Adivinha-o?style=flat-square&label=forks" alt="Forks no GitHub" />
+  <img src="https://img.shields.io/github/issues/RMBarros-Dev/Jogo-da-Adivinha-o?style=flat-square&label=issues%20abertas" alt="Issues abertas" />
+  <img src="https://img.shields.io/badge/runtime-.NET%2010-512BD4?style=flat-square&logo=dotnet&logoColor=white" alt=".NET 10" />
+</div>
+
+<!-- REPOSITORY_METRICS_START -->
+_As métricas de linguagens serão geradas pelo GitHub Actions após a primeira execução bem-sucedida._
+<!-- REPOSITORY_METRICS_END -->
+
+### Verificação técnica
+
+| Dimensão | Evidência implementada | Limite da medição |
+|---|---|---|
+| Runtime / linguagem | C# com .NET 10 | Confirmado pela documentação e referência ao projeto. |
+| Arquitetura | Ponto de entrada do console separado das regras da classe Partida | Aplicação educacional pequena; não se declara camada de serviços ou persistência. |
+| Testes automatizados | Projeto .NET de testes separado; injeção determinística de Random | Executar com dotnet test; percentual de cobertura não publicado. |
+| CI | [Workflow de CI](.github/workflows/ci.yml) | Resultado atual indicado pelo badge acima. |
+| Análise estática de segurança | [Workflow CodeQL](.github/workflows/codeql.yml) | Execução do workflow não equivale a certificação de segurança. |
+| Persistência / implantação | Sem armazenamento persistente ou implantação de produção | Não aplicável a este exercício de console. |
