@@ -165,7 +165,16 @@ Consulte [LICENSE.txt](LICENSE.txt) para os termos da licença.
 </div>
 
 <!-- REPOSITORY_METRICS_START -->
-_As métricas de linguagens serão geradas pelo GitHub Actions após a primeira execução bem-sucedida._
+### Distribuição de linguagens (GitHub Linguist)
+
+![Distribuição de linguagens do repositório](assets/metrics/repository-languages.svg)
+
+| Linguagem | Bytes de código | Participação |
+|---|---:|---:|
+| C# | 7,445 | 100.00% |
+
+_Total de bytes de código contabilizados: 7,445. Atualizado em: 2026-11-18 21:12 UTC._
+
 <!-- REPOSITORY_METRICS_END -->
 
 ### Verificação técnica
